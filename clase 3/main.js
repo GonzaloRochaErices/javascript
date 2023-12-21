@@ -122,3 +122,74 @@
 // }
 
 // // Aquí deberían ir los alerts mostrando los conteos de rachaMax y contador
+
+
+
+
+// EJEMPLO 5 CLASE 3 WHILE!!!!!!!!!!!!!!!!
+
+// let condición = true
+// while (condición) {
+//     console.log ('al infinito y mas allá!')
+//     if (prompt('ingrese 0 para salir del bucle') == '0') {
+//         condición = false
+//     }
+// }
+
+// let condición = true
+// while (condición) {
+//     console.log('al infinito y mas allá!')
+//     if (prompt('ingrese 0 para salir del bucle') == '0') {
+//         break
+//     }
+// }
+
+
+// EJEMPLO 6 CLASE 3 DO WHILE!!!!!!!!!!!!!!!!
+
+// let condición = true
+// do {
+//     console.log ('al infinito y mas allá!')
+//     if (prompt('ingrese 0 para salir del bucle') == '0') {
+//         condición = false
+//     }
+// } while (condición)
+
+
+
+// EJEMPLO 7 CLASE 3 LOGIN SENCILLO!!!!!!!!!!!!!!!!
+
+
+// con do while
+
+// do {    
+//     nombre = prompt('ingrese su nombre')
+//     pass = prompt('ingrese su pass')
+
+// } while ((nombre != 'Gonzalo') || (pass != '123'))
+
+
+// con while
+
+// let nombre = prompt('ingrese su nombre')
+// let pass = prompt('ingrese su pass')
+
+// while ((nombre != 'Gonzalo') || (pass != '123')) {
+//     console.log('ingresaste mal los datos')
+//     nombre = prompt('ingrese su nombre')
+//     pass = prompt('ingrese su pass')
+// }
+
+
+// EJEMPLO 8 CLASE 3 VALIDANDO UN NUMERO!!!!!!!!!!!!!!!!!
+
+// let num = Number(prompt('Ingrese un numero por favor'))
+
+// // este programa entrará en bucle hasta que el usuario ingrese un número válido
+
+// while (isNaN(num) || num == '') {
+// 	console.log('Por favor, ingrese un numero que si no los cálculos no sirven')
+// 	num = Number(prompt('Ingrese un numero por favor'))
+
+// }
+
