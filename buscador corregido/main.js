@@ -4,7 +4,7 @@ const bookList = document.getElementById('bookList')
 let lastSearchTerm = ''
 let isSearchResultsDisplayed = false
 
-// verificar búsqueda anterior en localStorage al cargar la página
+// verificar búsqueda anterior en localStorage
 window.addEventListener('load', function () {
     const storedSearchTerm = localStorage.getItem('lastSearchTerm')
     if (storedSearchTerm) {
@@ -30,11 +30,9 @@ async function searchBooks() {
 
             lastSearchTerm = searchTerm
             localStorage.setItem('lastSearchTerm', lastSearchTerm) // para guardar búsqueda en localStorage
-
-            // Limpiamos la lista de libros antes de agregar los nuevos
             bookList.innerHTML = ''
 
-            // Iteramos sobre los libros utilizando un bucle for
+            // bucle for
             for (let i = 0; i < data.items.length; i++) {
                 const book = data.items[i]
                 const li = document.createElement('li')
@@ -75,7 +73,7 @@ function displayBooks(books) {
     })
 }
 
-// Mostrar sugerencias de dónde conseguir o comprar los libros
+// sugerencias de compra 
 function showSuggestions(books) {
     const suggestionsContainer = document.createElement('div')
     suggestionsContainer.classList.add('suggestions')
@@ -107,7 +105,7 @@ function hideGoBackButton() {
     goBackBtn.style.display = 'none'
 }
 
-// Agregar función para volver atrás
+// función volver corregida
 function goBack() {
     if (isSearchResultsDisplayed) {
         isSearchResultsDisplayed = false
